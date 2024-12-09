@@ -1,0 +1,36 @@
+section.reasons-section
+  .wrapper
+    .reasons-section__container
+      img.reasons-section__icon-shine(src="images/reasons-section-icon-shine.png" loading="lazy" width="958" height="275" alt="icon")
+      .reasons-section__box
+        .reasons-section__box-left
+          h2.reasons-section__title
+            span.font-s-100 4
+            span.font-s-38.text-up причины открыть <br> «MOONLIGHT BEAUTY» 
+          .swiper-bullet
+            .reasons-section__cards.swiper-wrapper
+              .reasons-section__card.swiper-slide
+                .font-s-19 Стабильно высокий спрос и широкие возможности
+                img.reasons-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+              .reasons-section__card.swiper-slide
+                .font-s-19 Большая маржинальность и высокая рентабельность
+                img.reasons-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+              .reasons-section__card.swiper-slide
+                .font-s-19 Надёжная и проверенная финансовая модель
+                img.reasons-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+              .reasons-section__card.swiper-slide
+                .font-s-19 Самореализация и статус хозяина салона красоты
+                img.reasons-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+            .bullet-pagination.bullet-pagination--ternary
+        img.reasons-section__img(src="images/reasons-section-img.jpg" loading="lazy" width="980" height="1258" alt="image")
+      .reasons-section__bottom
+        .font-w-semi-bold.font-s-19.text-up Узнайте о других преимуществах бизнеса по франшизе «MOONLIGHT BEAUTY»
+        .reasons-section__bottom-text.font-s-19 Скачайте подробную презентацию
+        form.reasons-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Скачать презентацию
+        .reasons-section__agree-wrapper
+          include ../components/agree.pug
+      img.reasons-section__logo(src="images/reasons-section-logo.png" loading="lazy" width="1256" height="507" alt="logo")

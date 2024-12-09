@@ -1,0 +1,47 @@
+section.details-section
+  .wrapper
+    .details-section__container
+      img.details-section__icon-shine(src="images/details-section-icon-shine.png" loading="lazy" width="958" height="179" alt="icon")
+      .details-section__box
+        img.details-section__logo(src="images/details-section-logo.png" loading="lazy" width="1256" height="507" alt="icon")
+        .details-section__box-left
+          h2.details-section__title.font-s-38.text-up
+            | Почувствуйте себя 
+            br.no-br
+            | владельцем 
+            br.no-br
+            | «MOONLIGHT BEAUTY»
+          .details-section__sub-title.font-s-19 Запишитесь на тест-драйв франшизы и вы узнаете:
+        .details-section__swiper
+          .swiper-bullet
+            .details-section__cards.swiper-wrapper
+              .details-section__card.swiper-slide
+                span.details-section__card-num.font-s-38 01
+                span.details-section__card-text.font-s-19-a Как вести документооборот
+              .details-section__card.swiper-slide
+                span.details-section__card-num.font-s-38 02
+                span.details-section__card-text.font-s-19-a Как расширять клиентскую базу
+              .details-section__card.swiper-slide
+                span.details-section__card-num.font-s-38 03
+                span.details-section__card-text.font-s-19-a Как подбирать персонал
+              .details-section__card.swiper-slide
+                span.details-section__card-num.font-s-38 04
+                span.details-section__card-text.font-s-19-a Как организовать пространство салона красоты
+              .details-section__card.swiper-slide
+                span.details-section__card-num.font-s-38 05
+                span.details-section__card-text.font-s-19-a Как избежать ошибок на старте
+              .details-section__card.swiper-slide
+                span.details-section__card-num.font-s-38 06
+                span.details-section__card-text.font-s-19-a Как всегда быть в курсе новинок рынка
+              .details-section__card.swiper-slide
+                span.details-section__card-num.font-s-38 07
+                span.details-section__card-text.font-s-19-a Как и из чего будет формироваться ваша прибыль
+            .bullet-pagination
+      .details-section__bottom
+        form.details-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Записаться
+        .details-section__agree-wrapper
+          include ../components/agree.pug

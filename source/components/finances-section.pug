@@ -1,0 +1,54 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      .finances-section__box
+        img.finances-section__img(src="images/finances-section-img.jpg" loading="lazy" width="920" height="1606" alt="image")
+        .finances-section__box-right
+          h2.finances-section__title.font-s-38.text-up
+            | Франшиза 
+            br.no-br
+            | «MOONLIGHT BEAUTY» 
+            br.no-br
+            | в цифрах
+          .finances-section__sub-title.font-s-19
+            | Сотрудничая с нами вы можете рассчитывать на:
+          .swiper-bullet
+            .finances-section__cards.swiper-wrapper
+              .finances-section__card.swiper-slide
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+                img.finances-section__card-icon-bg(src="images/finances-section-card-icon-bg.png" loading="lazy" width="337" height="175" alt="icon")
+                .font-w-semi-bold.font-s-24.text-up от 220 000 рублей
+                .font-s-19 средняя чистая <br> ежемесячная прибыль
+              .finances-section__card.swiper-slide
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+                .font-w-semi-bold.font-s-24.text-up от 1,96 млн рублей
+                .font-s-19 первоначальные <br> инвестиции
+              .finances-section__card.swiper-slide
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+                .font-w-semi-bold.font-s-24.text-up от 2,65 млн рублей
+                .font-s-19 средняя чистая годовая <br> прибыль
+              .finances-section__card.swiper-slide
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+                img.finances-section__card-icon-bg(src="images/finances-section-card-icon-bg.png" loading="lazy" width="337" height="175" alt="icon")
+                .font-w-semi-bold.font-s-24.text-up от 20,4%
+                .font-s-19 рентабельность по чистой <br> прибыли
+              .finances-section__card.swiper-slide
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+                img.finances-section__card-icon-bg(src="images/finances-section-card-icon-bg.png" loading="lazy" width="337" height="175" alt="icon")
+                .font-w-semi-bold.font-s-24.text-up 1 месяц
+                .font-s-19 чтобы начать <br> зарабатывать
+              .finances-section__card.swiper-slide
+                img.finances-section__card-icon(src="images/finances-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+                .font-w-semi-bold.font-s-24.text-up от 13 месяцев
+                .font-s-19 срок окупаемости вашего <br> бизнеса
+            .bullet-pagination.bullet-pagination--secondary
+      .finances-section__bottom
+        .finances-section__bottom-title.font-w-semi-bold.font-s-19.text-up Ознакомьтесь детально с финансовыми расчётами вашего будущего бизнеса
+        .finances-section__bottom-text.font-s-19 Скачайте финансовую модель «MOONLIGHT BEAUTY»
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug

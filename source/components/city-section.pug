@@ -1,0 +1,25 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      img.city-section__logo-bg(src="images/city-section-logo-bg.png" loading="lazy" width="1434" height="580" alt="logo")
+      img.city-section__icon-star(src="images/city-section-icon-star.svg" loading="lazy" width="21" height="42" alt="icon")
+      .city-section__box
+        .city-section__box-left
+          h2.city-section__title.font-s-38.text-up
+            | Начните свой бизнес
+            br
+            | прямо сейчас
+          .city-section__sub-title.font-s-19
+            | Проверьте, свободен ли ваш город
+            br
+            | для работы по франшизе
+          form.city-section__form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="city" autocomplete="off" placeholder="Город")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Получить
+          .city-section__agree-wrapper
+            include ../components/agree.pug
+        img.city-section__img(src="images/city-section-img.jpg" loading="lazy" width="980" height="832" alt="image")
+      include ../components/footer.pug

@@ -1,0 +1,46 @@
+section.steps-section
+  .wrapper
+    .steps-section__container
+      img.steps-section__icon-shine(src="images/steps-section-icon-shine.png" loading="lazy" width="958" height="228" alt="icon")
+      img.steps-section__logo(src="images/steps-section-logo.png" loading="lazy" width="1256" height="430" alt="logo")
+      h2.steps-section__title
+        span.font-s-100 6
+        span.font-s-38.text-up
+          | простых шагов для запуска
+          br
+          | вашего бизнеса
+      .steps-section__sub-title.font-s-19 Ознакомьтесь с ключевыми этапами совместной работы
+      .swiper-bullet
+        .steps-section__cards.swiper-wrapper
+          .steps-section__card.swiper-slide
+            img.steps-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+            .font-s-19-a Предоставим дистанционное <br> обучение
+          .steps-section__card.swiper-slide
+            img.steps-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+            .font-s-19-a Ищем помещение и подписываем <br> договор аренды
+          .steps-section__card.swiper-slide
+            img.steps-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+            .font-s-19-a Осуществляем поиск <br> персонала
+          .steps-section__card.swiper-slide
+            img.steps-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+            .font-s-19-a Проводим ремонт и оформляем <br> помещение
+          .steps-section__card.swiper-slide
+            img.steps-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+            .font-s-19-a Производим заказ, доставку <br> и монтаж оборудования и мебели
+          .steps-section__card.swiper-slide
+            img.steps-section__card-icon(src="images/reasons-section-card-icon.svg" loading="lazy" width="20" height="40" alt="icon")
+            .font-s-19-a Открываем салон красоты <br> и начинаем зарабатывать
+        .bullet-pagination
+      .steps-section__bottom
+        .font-w-semi-bold.font-s-19.text-up
+          | Работаем строго по договору, 
+          br.no-br
+          | в котором прописаны наши 
+          br.no-br
+          | обязанности и все условия 
+          br.no-br
+          | сотрудничества
+        .steps-section__bottom-block
+          button.btn.steps-section__btn(data-remodal-target="modal-form-agreement") Скачать пример договора
+          .steps-section__agree-wrapper
+            include ../components/agree.pug

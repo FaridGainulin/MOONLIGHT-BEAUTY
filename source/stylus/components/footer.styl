@@ -1,0 +1,29 @@
+.footer
+
+  &__container
+    display: flex
+    align-items: center
+    flex-direction: column
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content space-between
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__logo
+    width 120px
+    height: auto
+    +above($breakpoints.sm)
+      width 130px
+    +above($breakpoints.md)
+      width 160px
+    +above($breakpoints.xxl)
+      width 223px
+
+  &__privacy
+    cursor pointer
+    text-decoration: underline

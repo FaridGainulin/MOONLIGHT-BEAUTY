@@ -1,0 +1,50 @@
+section.start-section
+  .wrapper
+    .start-section__container
+      h2.start-section__title
+        span.font-s-38.text-up
+          | Откройте собственный 
+          br
+          | бизнес за 1 месяц
+        span.font-s-19 Команда «MOONLIGHT BEAUTY» поддержит вас на всех этапах
+      .start-section__box
+        img.start-section__img(src="images/start-section-img.jpg" loading="lazy" width="920" height="1344" alt="image")
+        .start-section__box-right
+          .swiper-bullet
+            .start-section__cards.swiper-wrapper
+              .start-section__card.swiper-slide
+                img.start-section__card-icon-bg(src="images/start-section-card-icon-bg.png" loading="lazy" width="337" height="188" alt="icon")
+                .start-section__card-num.font-s-38 01
+                .font-s-19 Предоставим дистанционное <br> обучение
+              .start-section__card.swiper-slide
+                .start-section__card-num.font-s-38 02
+                .font-s-19 Направим команду <br> для запуска бизнеса*
+              .start-section__card.swiper-slide
+                .start-section__card-num.font-s-38 03
+                .font-s-19 Обучим технике продаж
+              .start-section__card.swiper-slide
+                img.start-section__card-icon-bg(src="images/start-section-card-icon-bg.png" loading="lazy" width="337" height="188" alt="icon")
+                .start-section__card-num.font-s-38 04
+                .font-s-19 Добавим в закрытое <br> сообщество
+              .start-section__card.swiper-slide
+                img.start-section__card-icon-bg(src="images/start-section-card-icon-bg.png" loading="lazy" width="337" height="188" alt="icon")
+                .start-section__card-num.font-s-38 05
+                .font-s-19 Обеспечим ежегодные <br> встречи с франчайзи
+              .start-section__card.swiper-slide
+                .start-section__card-num.font-s-38 06
+                .font-s-19 Дадим любые консультации, <br> касающиеся ведения бизнеса
+            .bullet-pagination.bullet-pagination--ternary
+          .start-section__text.font-s-15 *Москва и Московская область — бесплатно, в регионы за доп плату
+
+section.start-section-bottom
+  .wrapper
+    .start-section-bottom__container
+      img.start-section-bottom__icon-bg(src="images/start-section-bottom-icon-bg.png" loading="lazy" width="958" height="232" alt="icon")
+      .font-w-semi-bold.font-s-19.text-up Получите подробный план по открытию  «MOONLIGHT BEAUTY»
+      form.start-section-bottom__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Скачать презентацию
+      .start-section-bottom__agree-wrapper
+        include ../components/agree.pug

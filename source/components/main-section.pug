@@ -1,0 +1,36 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      img.main-section__logo-bg(src="images/main-section-logo-bg.png" loading="lazy" width="838" height="338" alt="logo")
+      img.main-section__icon-star(src="images/main-section-icon-star.svg" loading="lazy" width="21" height="45" alt="icon")
+      img.main-section__icon-shine(src="images/main-section-icon-shine.png" loading="lazy" width="958" height="203" alt="icon")
+      include ../components/header.pug
+      .main-section__box
+        h1.main-section__title.font-s-38.text-up
+          | Откройте свой салон красоты 
+          br.no-br
+          | вместе с надёжным партнёром
+        .main-section__sub-title.font-s-19
+          | Начните зарабатывать от 2,65 млн рублей 
+          br.no-br
+          | в год на услугах, актуальных в любое время
+        .main-section__bottom
+          .font-s-19 Получите подробный план открытия
+          form.main-section__form(data-feedback-form)
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Получить
+          .main-section__agree-wrapper
+            include ../components/agree.pug
+        .main-section__cards-wrapper
+          .swiper-bullet
+            .main-section__cards.swiper-wrapper
+              .main-section__card.swiper-slide
+                .font-w-semi-bold.font-s-19.text-up Быстрый старт
+              .main-section__card.swiper-slide
+                .font-w-semi-bold.font-s-19.text-up Поддержка на всех этапах
+              .main-section__card.swiper-slide
+                .font-w-semi-bold.font-s-19.text-up Стабильная прибыль
+            .bullet-pagination
+        img.main-section__img(src="images/main-section-img.jpg" loading="lazy" width="862" height="1078" alt="image")

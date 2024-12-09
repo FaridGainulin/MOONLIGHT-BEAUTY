@@ -1,0 +1,26 @@
+.header
+  &__container
+    display: flex
+    justify-content space-between
+    align-items: center
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      flex-basis: 35%
+
+  &__logo
+    width 120px
+    height: auto
+    +above($breakpoints.sm)
+      width 130px
+    +above($breakpoints.md)
+      width 160px
+    +above($breakpoints.xxl)
+      width 223px
+
+  &__connection
+    +above($breakpoints.sm)
+      text-align: end
+      flex-basis: 35%

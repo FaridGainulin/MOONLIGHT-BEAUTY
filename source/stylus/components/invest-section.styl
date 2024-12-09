@@ -1,0 +1,97 @@
+.invest-section
+  // background-image: url('../images/invest-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 1px 0
+    +above($breakpoints.sm)
+      padding 50px 0
+    +above($breakpoints.md)
+      padding 80px 0
+    +above($breakpoints.xxl)
+      padding 130px 0 126px
+
+  &__title
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    padding-bottom 15px
+    text-align: center
+    color: #000
+    +above($breakpoints.sm)
+      text-align: start
+      flex-direction: row
+      align-items: flex-end
+      justify-content space-between
+      padding-bottom 20px
+    +above($breakpoints.md)
+      padding-bottom 30px
+    +above($breakpoints.xxl)
+      padding-bottom 46px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    position relative
+    overflow hidden
+    text-align: center
+    width 280px !important
+    background-color $color-blue
+    padding 15px 10px
+    +above($breakpoints.sm)
+      width 235px !important
+      padding 20px
+    +above($breakpoints.md)
+      width 308px !important
+      padding 30px
+    +above($breakpoints.xxl)
+      width 388px !important
+      height: 418px
+      padding 40px
+
+  &__card-icon
+    position: absolute
+    z-index -1
+    width 100%
+    height: auto
+    top: 0
+    right: 0
+
+  &__card-title
+    color: #3F98FF
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    margin-top 15px
+    +above($breakpoints.sm)
+      gap: 6px
+      margin-top 20px
+    +above($breakpoints.md)
+      gap: 8px
+      margin-top 30px
+    +above($breakpoints.xxl)
+      margin-top 40px
+      gap: 10px
+
+  &__agree-wrapper
+    display: flex
+    justify-content center
+    margin-top 10px
+    +above($breakpoints.md)
+      margin-top 16px

@@ -1,0 +1,53 @@
+section.invest-section
+  .wrapper
+    .invest-section__container
+      h2.invest-section__title
+        span.font-s-38.text-up
+          | Минимальные вложения 
+          br
+          | для старта — 1,96 млн рублей
+        span.font-s-19
+          | Выберите размер вашего города и узнайте величину 
+          br.no-br
+          | паушального взноса и размер инвестиций в 1 клик
+      .swiper-bullet
+        .invest-section__cards.swiper-wrapper
+          .invest-section__card.swiper-slide
+            img.invest-section__card-icon(src="images/invest-section-icon-shine.png" loading="lazy" width="388" height="210" alt="icon")
+            .invest-section__card-title.font-s-38
+              | до 500 000 
+              br.no-br
+              | жителей
+            form.invest-section__form(data-feedback-form)
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+              button.btn(type="submit") Узнать
+            .invest-section__agree-wrapper
+              include ../components/agree.pug
+          .invest-section__card.swiper-slide
+            .invest-section__card-title.font-s-38
+              | До 1 000 000 
+              br.no-br
+              | жителей
+            form.invest-section__form(data-feedback-form)
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+              button.btn(type="submit") Узнать
+            .invest-section__agree-wrapper
+              include ../components/agree.pug
+          .invest-section__card.swiper-slide
+            img.invest-section__card-icon(src="images/invest-section-icon-shine.png" loading="lazy" width="388" height="210" alt="icon")
+            .invest-section__card-title.font-s-38
+              | От 1 000 000 
+              br.no-br
+              | жителей
+            form.invest-section__form(data-feedback-form)
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+              button.btn(type="submit") Узнать
+            .invest-section__agree-wrapper
+              include ../components/agree.pug
+        .bullet-pagination

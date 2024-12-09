@@ -1,0 +1,186 @@
+.finances-section
+  // background-image: url('../images/finances-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 0
+    +above($breakpoints.sm)
+      padding 70px 0 0
+    +above($breakpoints.md)
+      padding 90px 0 0
+    +above($breakpoints.xxl)
+      padding 130px 0 0
+
+  &__box
+    display: flex
+    flex-direction: column-reverse
+    align-items: flex-start
+    +above($breakpoints.sm)
+      flex-direction: row
+      align-items: flex-end
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 27px
+    +above($breakpoints.xxl)
+      gap: 50px
+
+  &__img
+    width 150px
+    height: auto
+    margin-top -20px
+    +above($breakpoints.sm)
+      margin 0
+      width 265px
+    +above($breakpoints.md)
+      width 368px
+    +above($breakpoints.xxl)
+      width 460px
+
+  &__title,
+  &__sub-title
+    color: #000
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__sub-title
+    padding 10px 0 15px
+    +above($breakpoints.sm)
+      padding 20px 0
+    +above($breakpoints.md)
+      padding 30px 0
+    +above($breakpoints.xxl)
+      padding 41px 0 36px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    position relative
+    overflow hidden
+    width 280px !important
+    background-color $color-blue
+    display: flex
+    flex-direction: column
+    gap: 5px
+    padding 15px 5px 15px 45px
+    +above($breakpoints.sm)
+      gap: 10px
+      width 220px !important
+      padding 20px 5px 20px 30px
+    +above($breakpoints.md)
+      gap: 15px
+      width: 275px !important;
+      padding 30px 5px 30px 40px
+    +above($breakpoints.xxl)
+      gap: 20px
+      width 337px !important
+      height: 175px
+      padding 40px 5px 40px 56px
+
+  &__card-icon
+    position: absolute
+    width: 10px;
+    height: 23px;
+    top: 16px;
+    left: 20px;
+    +above($breakpoints.sm)
+      width: 13px;
+      height: 30px;
+      top: 21px;
+      left: 8px;
+    +above($breakpoints.md)
+      width: 17px;
+      height: 36px;
+      top: 33px;
+      left: 11px;
+    +above($breakpoints.xxl)
+      width 20px
+      height: 40px
+      top: 40px
+      left: 20px
+
+  &__card-icon-bg
+    position: absolute
+    top: 0
+    right: 0
+    width 100%
+    height: auto
+
+  &__bottom
+    position relative
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    background-color $color-blue
+    padding 15px 10px
+    margin-top 15px
+    +above($breakpoints.sm)
+      margin-top 40px
+      padding 30px 5px
+    +above($breakpoints.md)
+      margin-top 60px
+      padding 40px 5px
+    +above($breakpoints.xxl)
+      height: 275px
+      padding 50px 5px
+      margin-top 80px
+    &:after
+      content: ""
+      position: absolute
+      z-index -1
+      width 100vw
+      height: 100%
+      top: 0
+      left: 0
+      background-color $color-blue
+
+  &__bottom-text
+    padding 10px 0 15px
+    +above($breakpoints.sm)
+      padding 15px 0 20px
+    +above($breakpoints.md)
+      padding 18px 0 25px
+    +above($breakpoints.xxl)
+      padding 20px 0 30px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content center
+      gap: 6px
+    +above($breakpoints.md)
+      gap: 8px
+    +above($breakpoints.xxl)
+      gap: 10px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 188px !important
+      +above($breakpoints.md)
+        width 230px !important
+      +above($breakpoints.xxl)
+        width 288px !important
+
+  &__agree-wrapper
+    display: flex
+    justify-content center
+    margin-top 10px
+    +above($breakpoints.md)
+      margin-top 16px

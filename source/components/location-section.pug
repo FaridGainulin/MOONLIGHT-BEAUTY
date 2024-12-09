@@ -1,0 +1,26 @@
+section.location-section
+  .wrapper
+    .location-section__container
+      .location-section__box
+        img.location-section__img(src="images/location-section-img.jpg" loading="lazy" width="716" height="890" alt="image")
+        .location-section__box-right
+          h2.location-section__title.font-s-38.text-up
+            | Сделайте первый шаг, узнайте 
+            br.no-br
+            | лучшие места для открытия 
+            br.no-br
+            | «MOONLIGHT BEAUTY»
+          .location-section__sub-title.font-s-19
+            | Просто укажите название вашего города 
+            br
+            | и получите список удачных локаций
+          .location-section__bottom
+            form.location-section__form(data-city-form)
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              .input.js-input-city.location-item
+                input.input.location-item.input-city-position(type="text" name="city" autocomplete="off" placeholder="Город")
+                .input__progress.js-input-city-progress
+                  span.js-input-city-percent 0%
+              button.btn.location-item(type="submit") Получить список локаций
+            .location-section__agree-wrapper
+              include ../components/agree.pug
